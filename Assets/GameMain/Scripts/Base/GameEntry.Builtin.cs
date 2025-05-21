@@ -12,6 +12,8 @@ namespace GameMain.Scripts.Base
         public static SceneComponent Scene { get; private set; }
         
         public static ReferencePoolComponent ReferencePool { get; private set; }
+        
+        public static EventComponent Event { get; private set; }
 
         private static void InitBuiltinComponents()
         {
@@ -19,6 +21,7 @@ namespace GameMain.Scripts.Base
             Scene = GFGameEntry.GetComponent<SceneComponent>();
             Procedure = GFGameEntry.GetComponent<ProcedureComponent>();
             ReferencePool = GFGameEntry.GetComponent<ReferencePoolComponent>();
+            Event = GFGameEntry.GetComponent<EventComponent>();
         }
     }
 }
